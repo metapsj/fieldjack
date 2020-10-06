@@ -1,4 +1,0 @@
-
-# ./queue/component.rb
-
-

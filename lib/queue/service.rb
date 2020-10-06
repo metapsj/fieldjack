@@ -1,6 +1,5 @@
 
 require 'drb/drb'
-require_relative 'component'
 
 puts "queue service is starting..."
 
