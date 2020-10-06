@@ -2,7 +2,7 @@
 
 ---
 
-# basics
+## basics
 
 - write topic message
 - read topic
@@ -10,7 +10,7 @@
 
 ---
 
-# notes
+## notes
 
 - write = push
 - read = peek
@@ -20,21 +20,23 @@ ordering / sequencing messages in a topic
 
 ---
 
-# read
+## read
 
 - head or tail
 - number of messages
 
 ---
 
-# take
+## take
 
 - head or tail
 - number of messages
 
 ---
 
-# write
+## write
 
 - single atomic operation
 - pipeline multiple writes
+
+---
