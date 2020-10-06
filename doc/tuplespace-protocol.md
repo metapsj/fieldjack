@@ -4,8 +4,7 @@
 
 # basics
 
-write topic message
-
+- write topic message
 - read topic
 - take topic
 
