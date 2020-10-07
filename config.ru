@@ -11,7 +11,7 @@ class App < Roda
 
     r.is String do |channel|
       r.get do
-        sleep 10  # blocking call for duration
+        sleep 10  # simulate a blocking call
         "get://channels/#{channel}"
       end
 
