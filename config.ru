@@ -11,22 +11,22 @@ class App < Roda
 
     r.is String do |channel|
       r.get do
-        sleep 10
+        sleep 10  # blocking call for duration
         "get://channels/#{channel}"
       end
 
       r.post do
-        "post://channels/#{channel}" + 
-          "\n" + 
-          r.params.inspect
+        <<~EOS
+          post://channels/#{channel}\n
+          #{r.params.inspect}"
+        EOS
       end
 
       r.delete do
-        "delete://channels/#{channel}" + 
-          "\n" +
-          channel + 
-          " \n" + 
-          r.params.inspect
+        <<~EOS
+          delete://channels/#{channel}\n
+          #{r.params.inspect}
+        EOS
       end
     end
   end
