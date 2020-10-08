@@ -20,18 +20,6 @@ https://blog.appsignal.com/2017/03/07/ruby-magic-concurrency-processes.html
 
 https://www.sitepoint.com/forking-ipc-ruby-part/
 
-## introducing druby
-
-https://www.druby.org/sidruby/p-1-introducing-druby.html
-
-## distributed ruby (DRb)
-
-https://nithinbekal.com/notes/druby/
-
-## druby workshop
-
-http://www.druby.org/fukuoka2019.pdf
-
 ## hidden jewels of ruby's stdlib
 
 https://katafrakt.me/2018/06/06/hidden-jewels-ruby-stdlib/
