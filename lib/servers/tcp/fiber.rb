@@ -35,10 +35,12 @@ end
 server = TCPServer.new('localhost', 9090)
 reactor = Reactor.new
 
+# server fiber
 Fiber.new do
   loop do
     client = reactor.wait_readable(server) { server.accept }
 
+    # client fiber
     Fiber.new do
       while buffer = reactor.wait_readable(client) { client.gets }
         reactor.wait_writable(client)
@@ -47,6 +49,7 @@ Fiber.new do
 
       client.close
     end.resume
+
   end
 end.resume
 
