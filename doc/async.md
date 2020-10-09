@@ -2,6 +2,12 @@
 
 ---
 
+# fibers are the right solution
+
+https://www.codeotaku.com/journal/2018-11/fibers-are-the-right-solution/index
+
+---
+
 # ruby concurrency report 12/2019
 
 https://www.codeotaku.com/journal/2020-01/ruby-concurrency-progress-report/index
