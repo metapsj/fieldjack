@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'socket'
 
 # looping server
@@ -13,7 +15,35 @@ loop do
   client.close
 end
 
+__END__
+
+#
+# async
+#
+require 'async'
+require 'async/io/tcp_socket'
+
+Async do |task|
+  server = Async::IO::TCPServer.new('localhost', 9090)
+
+  loop do
+    client, address = server.accept
+
+    task.async do
+      while buffer = client.gets
+        client.puts(buffer)
+      end
+
+      client.close
+    end
+  end
+end
+
+
+#
 # fiber server
+#
+require 'socket'
 require 'fiber'
 
 class Reactor
@@ -65,7 +95,12 @@ end.resume
 
 reactor.run
 
+
+#
 # threading server
+#
+require 'socket'
+require 'socket'
 server = TCPServer.new('localhost', 9090)
 
 loop do
@@ -81,7 +116,10 @@ loop do
 end
 
 
+#
 # forking server
+#
+require 'socket'
 server = TCPServer.new('localhost', 9090)
 
 loop do
