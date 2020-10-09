@@ -3,7 +3,8 @@ source 'https://rubygems.org'
 ruby '>=2.7.1'
 
 gem 'roda'
-gem 'polyphony'
+gem 'async'
+# gem 'polyphony'
 
 group :direnv do
   gem 'bundler', '~> 2.1'
