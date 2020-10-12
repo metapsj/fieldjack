@@ -22,8 +22,3 @@ tuple space protocol
 
 ---
 
-# ruby-scgi
-
-https://github.com/jeremyevans/ruby-scgi
-
----
