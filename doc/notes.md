@@ -15,3 +15,15 @@ https://katafrakt.me/2018/06/06/hidden-jewels-ruby-stdlib/
 https://blog.monotone.dev/ruby/2020/01/20/event-driven-with-ruby-fiber.html
 
 ---
+
+# Tuple Space Server
+
+tuple space protocol
+
+---
+
+# ruby-scgi
+
+https://github.com/jeremyevans/ruby-scgi
+
+---
