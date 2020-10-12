@@ -6,7 +6,7 @@ class TupleSpaceClient
   include Rinda
 
   def initialize
-    tuplespace = DRbObject.new(nil, 'druby://localhost:4000')
+    @tuplespace = DRbObject.new(nil, 'druby://localhost:4000')
   end
 
   def start
@@ -21,7 +21,7 @@ class TupleSpaceClient
 
         tuple = [topic, message]
 
-        puts tuplespace.send(method, tuple)
+        puts @tuplespace.send(method, tuple)
       rescue Exception => e
         puts e.message
       end
@@ -29,4 +29,6 @@ class TupleSpaceClient
   end
 
 end
+
+client = TupleSpaceClient.new.start
 
