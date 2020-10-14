@@ -26,3 +26,8 @@ https://stackoverflow.com/questions/16383416/how-to-maintain-the-tcp-connection-
 
 ---
 
+# beej's guide to network programming
+
+https://beej.us/guide/bgnet/html/
+
+---
